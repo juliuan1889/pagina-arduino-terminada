@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Página de repartidor de cartas</title>
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/estilos.css">
+	  <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/carousel.rtl.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/code.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .contact-container{
+        margin-bottom: 7px;
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#participantes">Participantes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#Codigo">Código</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Materiales">Materiales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Objetivo">Objetivo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pasoapaso">Paso a paso</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <!--<a href="form.html" target="_blank"><button class="btn btn-outline-success">Contacto</button></a>-->
+          <div class="contact-container">
+            <a href="form.html" target="_blank"><button type="button" class="btn btn-outline-success">contacto</button></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  
+  <div class="slideshow">
+		<ul class="slider">
+			<li>
+				<img src="img/1.jpg" alt="" width="100%" height="500px">
+			</li>
+			<li>
+				<img src="img/2.jpg" alt="" width="100%" height="500px">
+				
+			</li>
+		</ul>
+
+		<ol class="pagination">
+			
+		</ol>
+	
+		<div class="left">
+			<span class="fa fa-chevron-left"></span>
+		</div>
+
+		<div class="right">
+			<span class="fa fa-chevron-right"></span>
+		</div>
+
+	</div>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div id="participantes" class="row">
+      <div class="col-lg-4">
+        <img src="img/vito.jpg" class="bd-placeholder-img rounded-circle" width="250" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+        <h2 class="fw-normal">Alessi Vito</h2>
+        <p>Alessi Vito, nacido el 17/09/2004 va a 5to 1ra de Informática del Colegio Salesiano San José 2043°.</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="img/juli.jpg" class="bd-placeholder-img rounded-circle" width="250" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+        <h2 class="fw-normal">Giardina Julián</h2>
+        <p>Giardina Julián, nacido el 26/05/2005 va a 5to 1ra de Informática del Colegio Salesiano San José 2043°.</p>
+      </div><!-- /.col-lg-4 -->
+      <!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr id="Codigo" class="featurette-divider">
+
+    <div class="code">
+      <script src="https://gist.github.com/juliuan1889/a1f28055b9f3ef912e4579b8335804fb.js"></script>
+    </div>
+    
+    <hr id="Materiales" class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Motor Paso a paso (Con Driver)</h2>
+        <p class="lead">Los motores paso a paso unipolares son aquellos en los que el sentido de la corriente que circula por los bobinados no cambia.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/img1.webp" width="400" height="400">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Motor Corriente Continua</h2>
+        <p class="lead">Un motor de corriente continua (CC) es una máquina giratoria que convierte energía eléctrica en energía mecánica. Esta funcionalidad está basada en el principio de inducción, bajo el cual se crea una fuerza electromagnética a partir de una corriente de entrada que, a la vez, crea un movimiento giratorio.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="img/img2.webp" width="400" height="400">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Relay</h2>
+        <p class="lead">Conocidos también como relés, son dispositivos electromagnéticos que se encargan de abrir y cerrar el paso de la corriente eléctrica y son accionados bajo este mismo tipo de energía.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/img3.jpg" width="400" height="400">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Arduino Nano</h2>
+        <p class="lead">Es la placa Arduino Uno R3 en versión reducida, pero con dos pines analógicos adicionales. Estás son sus características técnicas: Microcontrolador: ATMega328P. Velocidad de reloj: 16 MHz.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="img/img4.jpg" width="400" height="400">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Modulo Bluetooth HC-05</h2>
+        <p class="lead">El módulo Bluetooth HC-05 nos permite conectar nuestros proyectos con Arduino a un smartphone, celular o PC de forma inalámbrica (Bluetooth), con la facilidad de operación de un puerto serial.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/img5.png" width="400" height="400">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Pulsador</h2>
+        <p class="lead">Un pulsador eléctrico o botón pulsador es un componente eléctrico que permite o impide el paso de la corriente eléctrica cuando se aprieta o pulsa.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="img/img6.jpg" width="400" height="400">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    
+    <!-- /END THE FEATURETTES -->
+
+    <h2 id="Objetivo">Objetivo <span class="badge bg-secondary">Repartidor del Cartas Automático</span></h2>
+
+    <div class="objetivos">
+      <div class="obj-container">
+        <div class="obj-box">
+          <p>El objetivo del proyecto es automatizar el acto de repartir cartas y que le quede cómodo a las personas, de juegos como el UNO, Truco y ChinChon (Los juegos se elijen desde una App). También como objetivo tenemos el hecho de las trampas, como el carteo, con el repartidor de cartas, seria casi imposible cartearse.</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <h2 id="pasoapaso">Paso a Paso<span class="badge bg-secondary">Armado</span></h2>
+    <div class="list-container">
+      <ol class="list-group list-group-numbered lista">
+        <li class="list-group-item">Buscamos en internet varios proyectos para poder inspirarnos en el nuestro.</li>
+        <li class="list-group-item">Hicimos una lista de las cosas que necesitabamos para poder empezar a construir los simientos del proyecto.</li>
+        <li class="list-group-item">Comenzamos a investigar videos de como programar con C++ el motor paso a paso con su respectivo driver.</li>
+        <li class="list-group-item">Armamos el código del motor paso a paso, seguido del motor de corriente continua con el Relay.</li>
+        <li class="list-group-item">Comenzamos a crear la aplicación que seria la que controle a que juego jugar.</li>
+        <li class="list-group-item">Conectamos nuestro Arudino NANO a un modulo Bluetooth HC-05 y comenzamos a hacer pruebas de conexión con un LED y una aplicación.</li>
+        <li class="list-group-item">Metimos la programación del pulsador y la del módulo bluetooth a nuestro código final.</li>
+        <li class="list-group-item">Realizamos el modelo 3D, en donde irían todos los componentes que harian funcionar a nuestro proyecto.</li>
+        <li class="list-group-item">Soldamos a una plaqueta todos los componentes con sus respectivos clables.</li>
+        <li class="list-group-item">Ensamblamos los componentes con nuestro modelo 3D.</li>
+      </ol>
+    </div>
+    
+    <div class="a1"></div>
+    <div class="a1"></div>
+    <hr class="featurette-divider ultima">
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer id="contact" class="footer">
+    <div class="grupo-1">
+        <div class="box-1">
+            <figure>
+                    <img src="img/sanjo.png" alt="">
+            </figure>
+        </div>
+        <div class="box">
+            <p>Página hecha para aprobar la materia de Software III.</p>
+            <p>Contanctanos<a href=""> aquí</a>
+            </p>
+        </div>
+        <div class="box">
+            <h2>Siguenos</h2>
+            <div class="red-social">
+                <a href="" class="fa fa-instagram" target="_blank"></a>
+                <a href="" class="fa fa-instagram" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2022 <b>HardConstruct </b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+	  <script src="js/main.js"></script>
+      
+  </body>
+</html>

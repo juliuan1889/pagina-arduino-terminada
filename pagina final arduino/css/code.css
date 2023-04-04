@@ -1,0 +1,174 @@
+.gist-data{
+    height: 400px;
+}
+
+.row{
+    justify-content: center;
+}
+
+.main{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+body{
+    padding: 0 !important;
+}
+
+.contact{
+    text-decoration: none;
+    color: rgb(37, 141, 55);
+    padding: 9px;
+    border-radius: 7px;
+    border: 1px solid rgb(37, 141, 55);
+    box-shadow: .5px .5px 2px rgb(37, 141, 55);
+}
+
+.contact:hover{
+    color: rgb(16, 107, 31);
+    box-shadow: .4px .4px 2px rgb(37, 141, 55);
+}
+
+.bd-placeholder-img:hover{
+    width: 300px;
+    height: 300px;
+    transition: all 1s;
+}
+
+.contact-container{
+    margin-top: 6px;
+}
+
+.col-md-5 img:hover{
+    width: 500px;
+    height: 500px;
+    transition: all 1s;
+}
+
+.col-md-7 img:hover{
+    width: 500px;
+    height: 500px;
+    transition: all 1s;
+}
+
+.obj-container{
+    margin: 50px 0 50px 0;
+    width: 100%;
+    height: 150px;
+    border: solid 2px #000;
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 1px 1px 3px;
+}
+
+.obj-box{
+    margin: auto;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 2px;
+    border-radius: 30px;
+    width: 98.5%;
+    height: 90%;
+}
+
+.objetivos{
+    width: 100%;
+    height: 100%;
+}
+
+.obj-box p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.a1{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+    .obj-container{  
+    height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .obj-container{  
+        height: 260px;
+        }
+
+        .obj-box{
+            width: 95%;
+            height: 90%;
+        }
+
+}
+
+@media screen and (max-width: 493px){
+    .obj-container{  
+        height: 400px;
+        }
+
+        .obj-box{
+            width: 95%;
+            height: 90%;
+        }
+}
+
+@media screen and (max-width: 350px){
+    .obj-container{  
+        height: 550px;
+        }
+
+        .badge{
+            display: none !important;
+        } 
+
+        .obj-box{
+            width: 95%;
+            height: 90%;
+        }
+}
+
+@media screen and (max-width: 270px){
+    .obj-container{  
+        height: 900px;
+        }
+
+        .badge{
+            display: none !important;
+        } 
+
+        .obj-box{
+            width: 95%;
+            height: 90%;
+        }
+}
+
+@media screen and (max-width: 994px){
+    .ultima{
+        display: none;
+    }
+}
+
+.lista{
+    margin-top: 50px;
+    display: flex;
+}
+
+.list-container{
+    width: 100%;
+    height: 600px;
+}
+
+@media screen and (max-width: 766){
+    .list-container{
+        width: 100%;
+        height: 800px !important;
+        margin-bottom: 100px;
+    }
+
+    .a1{
+        display: flex;
+        width: 100%;
+        height: 100px;
+    }
+}
